@@ -1,4 +1,3 @@
-// import './App.css';
 import user from './db/user.json'
 import statisticalData from './db/statistical-data.json'
 import friends from './db/friends.json'

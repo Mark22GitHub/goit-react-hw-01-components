@@ -1,0 +1,17 @@
+.value {
+  display: block;
+  font-weight: 700;
+}
+.stats {
+  text-align: center;
+  border-top: 2px solid rgb(168, 168, 168);
+  width: calc((100%) / 3);
+  padding: 20px 0 20px 0;
+}
+.stats:not(:last-child) {
+  border-right: 2px solid rgb(168, 168, 168);
+}
+.stats_title {
+  color: rgb(101, 101, 101);
+  font-size: 20px;
+}

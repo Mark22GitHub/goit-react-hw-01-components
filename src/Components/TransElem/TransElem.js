@@ -14,7 +14,7 @@ const TransElem = ({type, amount, currency}) => {
 export default TransElem;
 
 TransElem.propTypes = {
-    type: PropTypes.string,
-    amount: PropTypes.string,
-    currency: PropTypes.string
+    type: PropTypes.string.isRequired,
+    amount: PropTypes.number.isRequired,
+    currency: PropTypes.string.isRequired,
 }

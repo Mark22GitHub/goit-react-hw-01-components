@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Stats.module.css'
 
 const Stats = ({title,value}) => {
     return (
-    <li>
-            <span className="label">{title}</span>
-            <span className="quantity">{value}</span>
+    <li className={styles.stats}>
+            <span className={styles.stats_title}>{title}</span>
+            <span className={styles.value}>{value}</span>
     </li>
     );
 };
@@ -13,6 +14,6 @@ const Stats = ({title,value}) => {
 export default Stats;
 
 Stats.propTypes = {
-    title: PropTypes.string,
-    value: PropTypes.number,
+    title: PropTypes.string.isRequired,
+    value: PropTypes.number.isRequired,
 }
